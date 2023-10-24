@@ -1,0 +1,75 @@
+/* Estilos para el reloj analógico y digital */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.reloj-analogico {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: url("/img/reloj.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3; /* Color de fondo del reloj analógico */
+}
+
+.reloj-digital {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "monospace";
+    font-size: 1.5rem;
+    color: #333; /* Color del texto del reloj digital */
+    text-align: center;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+#reloj-digital-content {
+    display: inline-block;
+    color: #333; /* Color del texto del reloj digital */
+}
+
+#am-pm {
+    font-size: 1rem;
+    color: #777; /* Color del indicador AM/PM */
+}
+
+.manecillas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hora, .minuto, .segundo {
+    position: absolute;
+    background: #333; /* Color de las manecillas */
+    transform-origin: 50% 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hora {
+    width: 4px;
+    height: 60px;
+    bottom: 50%;
+}
+
+.minuto {
+    width: 2px;
+    height: 80px;
+    bottom: 50%;
+}
+
+.segundo {
+    width: 1px;
+    height: 90px;
+    bottom: 50%;
+}
